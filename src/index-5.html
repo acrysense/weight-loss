@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт похудения</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__inner">
+            <!-- header -->
+            <header class="header" id="header">
+                <div class="container">
+                    <a href="index.html" class="logotype">
+                        <img src="img/dist/logotype.svg" alt="Logotype">
+                    </a>
+                </div>
+            </header>
+            <!-- end of header -->
+            <!-- poll -->
+            <div class="poll" id="poll">
+                <div class="container">
+                    <div class="poll__wrapper">
+                        <div class="poll__top">
+                            <h3 class="poll__subtitle">Ваш типичный день</h3>
+                            <ul class="c-stages poll__stages">
+                                <li class="c-stages__item c-stages__item--current">5</li>
+                                <li class="c-stages__item">8</li>
+                            </ul>
+                        </div>
+                        <h2 class="poll__title">Опишите ваш типичный день</h2>
+                        <div class="poll__group">
+                            <label for="poll-sex-01" class="btn-checkbox poll__radio">
+                                <input type="radio" id="poll-sex-01" name="poll-sex" class="btn-checkbox__input">
+                                <span class="btn-checkbox__label">В офисе</span>
+                            </label>
+                            <label for="poll-sex-02" class="btn-checkbox poll__radio">
+                                <input type="radio" id="poll-sex-02" name="poll-sex" class="btn-checkbox__input">
+                                <span class="btn-checkbox__label">В офисе, но регулярно выхожу на улицу</span>
+                            </label>
+                            <label for="poll-sex-03" class="btn-checkbox poll__radio">
+                                <input type="radio" id="poll-sex-03" name="poll-sex" class="btn-checkbox__input">
+                                <span class="btn-checkbox__label">Большую часть дня я хожу пешком</span>
+                            </label>
+                            <label for="poll-sex-04" class="btn-checkbox poll__radio">
+                                <input type="radio" id="poll-sex-04" name="poll-sex" class="btn-checkbox__input">
+                                <span class="btn-checkbox__label">Ручной труд</span>
+                            </label>
+                            <label for="poll-sex-05" class="btn-checkbox poll__radio">
+                                <input type="radio" id="poll-sex-05" name="poll-sex" class="btn-checkbox__input">
+                                <span class="btn-checkbox__label">В основном я сижу дома</span>
+                            </label>
+                        </div>
+                        <a href="index-4.html" class="poll__back back-btn">
+                            <svg class="back-btn__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-arrow-back"></use>
+                            </svg>
+                            <span>назад</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end of poll -->
+            <!-- page image -->
+            <picture class="page-img">
+                <img src="img/dist/page-calendar.svg" alt="Image">
+            </picture>
+            <!-- end of page image -->
+        </div>
+        <!-- footer -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <button class="footer__trigger">О сервисе</button>
+                    <div class="footer__wrapper">
+                        <div class="footer__block">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <span class="footer__link">2022 ООО «Название»</span>
+                                </li>
+                                <li class="footer__item">
+                                    <span class="footer__link">ИНН: 777777777</span>
+                                </li>
+                                <li class="footer__item">
+                                    <span class="footer__link">ОГРН: 12112121212</span>
+                                </li>
+                                <li class="footer__item">
+                                    <span class="footer__link">Тел.: <a href="tel:+381111111101">+38 (111) 111-11-01</a></span>
+                                </li>
+                                <li class="footer__item">
+                                    <span class="footer__link">E-mail: <a href="mailto:support@support.com">support@support.com</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <div class="c-payment">
+                                <h3 class="c-payment__subtitle">Принимаем к оплате:</h3>
+                                <ul class="c-payment__list">
+                                    <li class="c-payment__item">
+                                        <picture class="c-payment__img">
+                                            <img src="img/dist/visa.png" width="92px" height="30px" alt="Visa">
+                                        </picture>
+                                    </li>
+                                    <li class="c-payment__item">
+                                        <picture class="c-payment__img">
+                                            <img src="img/dist/mastercard.png" width="50px" height="30px" alt="Mastercard">
+                                        </picture>
+                                    </li>
+                                    <li class="c-payment__item">
+                                        <picture class="c-payment__img">
+                                            <img src="img/dist/apple-pay.png" width="73px" height="30px" alt="Apple Pay">
+                                        </picture>
+                                    </li>
+                                    <li class="c-payment__item">
+                                        <picture class="c-payment__img">
+                                            <img src="img/dist/google-pay.png" width="76px" height="30px" alt="Google Pay">
+                                        </picture>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__block">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Отменить подписку</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Политика обработки данных</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Тарифы</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Возврат средств</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+    </div>
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
