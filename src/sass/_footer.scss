@@ -2,6 +2,8 @@
     &__wrap {
         position: relative;
         padding: 15px 0 20px;
+        min-height: 227px;
+        transition: all 0.2s linear;
         &::before {
             content: '';
             position: absolute;
@@ -13,6 +15,10 @@
             height: 1px;
             background: linear-gradient(116.15deg, #AFE11E 0%, #4DB856 100%);
             border-radius: 5px;
+        }
+
+        @media screen and (max-width: 767px) {
+            min-height: auto;
         }
     }
     &__trigger {
@@ -72,11 +78,19 @@
         }
     }
     &__wrapper {
-        display: none;
+        display: flex;
         justify-content: space-between;
-        padding: 15px 0 20px;
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s linear;
+        pointer-events: none;
         &--active {
-            display: flex;
+            padding: 15px 0 20px;
+            visibility: visible;
+            max-height: 100vh;
+            opacity: 1;
+            pointer-events: all;
         }
 
         @media screen and (max-width: 767px) {
