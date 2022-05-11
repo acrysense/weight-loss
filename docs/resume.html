@@ -12,7 +12,7 @@
     <div class="wrapper">
         <div class="wrapper__inner">
             <!-- header -->
-            <header class="header" id="header">
+            <header class="header header--clear" id="header">
                 <div class="container">
                     <a href="index.html" class="logotype">
                         <img src="img/dist/logotype.svg" alt="Logotype">
@@ -20,65 +20,60 @@
                 </div>
             </header>
             <!-- end of header -->
-            <!-- poll -->
-            <div class="poll" id="poll">
+            <!-- resume -->
+            <div class="resume" id="resume">
                 <div class="container">
-                    <div class="poll__wrapper">
-                        <div class="poll__top">
-                            <h3 class="poll__subtitle">Ваш персональный план готов!</h3>
-                        </div>
-                        <h2 class="poll__title">Индивидуальный план питания <br>Название Плана</h2>
-                        <div class="c-timer">
-                            <span class="c-timer__title">Срок действия данного предложения истекает через:</span>
-                            <div class="c-timer__block">
-                                <span class="c-timer__value">30:00</span>
+                    <div class="resume__wrap">
+                        <h1 class="resume__heading">Резюме вашего профиля</h1>
+                        <div class="resume__wrapper">
+                            <div class="resume__item">
+                                <h3 class="resume__title">Ваш ИМТ</h3>
+                                <picture class="resume__img">
+                                    <span class="resume__amount">90,10</span>
+                                    <img src="img/dist/icon-imt.svg" alt="Image">
+                                </picture>
+                                <span class="resume__value">Ожидание резкое</span>
+                            </div>
+                            <div class="resume__item">
+                                <h3 class="resume__title">Метаболический возраст</h3>
+                                <picture class="resume__img">
+                                    <img src="img/dist/icon-age.svg" alt="Image">
+                                </picture>
+                                <span class="resume__value">34 года</span>
+                            </div>
+                            <div class="resume__item">
+                                <h3 class="resume__title">Рекомендуемое количество калорий</h3>
+                                <picture class="resume__img">
+                                    <img src="img/dist/icon-calories.svg" width="50px" height="50px" alt="Image">
+                                </picture>
+                                <span class="resume__value">1833-1920</span>
+                            </div>
+                            <div class="resume__item">
+                                <h3 class="resume__title">Рекомендуемое количество воды</h3>
+                                <picture class="resume__img">
+                                    <img src="img/dist/icon-water.svg" width="62px" height="56px" alt="Image">
+                                </picture>
+                                <span class="resume__value">3,5 литров</span>
+                            </div>
+                            <div class="resume__item">
+                                <h3 class="resume__title">Похудение в зонах</h3>
+                                <picture class="resume__img">
+                                    <img src="img/dist/icon-weight-loss.svg" alt="Image">
+                                </picture>
+                            </div>
+                            <div class="resume__item">
+                                <h3 class="resume__title">Достижимый вес после 28 дней диеты</h3>
+                                <picture class="resume__img">
+                                    <img src="img/dist/icon-weight.svg" width="50px" height="50px" alt="Image">
+                                </picture>
+                                <span class="resume__value">111 кг</span>
                             </div>
                         </div>
-                        <div class="c-price poll__price">
-                            <span class="c-price__title">стоимость:</span>
-                            <div class="c-price__group">
-                                <span class="c-price__old-price">435₴</span>
-                                <span class="c-price__new-price">25₴</span>
-                            </div>
-                        </div>
-                        <form action="#" class="poll-form">
-                            <input type="email" class="input input--center poll-form__input" placeholder="Ваш Email">
-                            <button class="poll-form__btn btn btn--green">Оплатить</button>
-                            <label for="poll-form" class="circle-checkbox poll-form__checkbox">
-                                <input type="checkbox" id="poll-form" class="circle-checkbox__input">
-                                <span class="circle-checkbox__icon"></span>
-                                <span class="circle-checkbox__label">Нажимая кнопку "Оплатить" Вы даете согласие на обработку персональных данных, а также подтверждаете ознакомление с публичной офертойи тарифами</span>
-                            </label>
-                        </form>
-                        <div class="c-payment poll__payment">
-                            <h3 class="c-payment__subtitle">Принимаем к оплате:</h3>
-                            <ul class="c-payment__list">
-                                <li class="c-payment__item">
-                                    <picture class="c-payment__img">
-                                        <img src="img/dist/visa.png" width="92px" height="30px" alt="Visa">
-                                    </picture>
-                                </li>
-                                <li class="c-payment__item">
-                                    <picture class="c-payment__img">
-                                        <img src="img/dist/mastercard.png" width="50px" height="30px" alt="Mastercard">
-                                    </picture>
-                                </li>
-                                <li class="c-payment__item">
-                                    <picture class="c-payment__img">
-                                        <img src="img/dist/apple-pay.png" width="73px" height="30px" alt="Apple Pay">
-                                    </picture>
-                                </li>
-                                <li class="c-payment__item">
-                                    <picture class="c-payment__img">
-                                        <img src="img/dist/google-pay.png" width="76px" height="30px" alt="Google Pay">
-                                    </picture>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="#" class="resume__btn btn btn--green">Получить прямо сейчас</a>
                     </div>
                 </div>
             </div>
-            <!-- end of poll -->
+            <!-- end of resume -->
         </div>
         <!-- footer -->
         <footer class="footer" id="footer">

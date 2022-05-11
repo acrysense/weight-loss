@@ -25,56 +25,48 @@
                 <div class="container">
                     <div class="poll__wrapper">
                         <div class="poll__top">
-                            <h3 class="poll__subtitle">Ваш персональный план готов!</h3>
+                            <h3 class="poll__subtitle">Управление подписками</h3>
                         </div>
-                        <h2 class="poll__title">Индивидуальный план питания <br>Название Плана</h2>
-                        <div class="c-timer">
-                            <span class="c-timer__title">Срок действия данного предложения истекает через:</span>
-                            <div class="c-timer__block">
-                                <span class="c-timer__value">30:00</span>
+                        <h2 class="poll__title">Где я нахожусь в данный момент?</h2>
+                        <p class="poll__help poll__help--center">Это страница по управлению подписками, а&nbsp;также мы ответим на самые распространенные вопросы</p>
+                        <div class="poll__body">
+                            <div class="poll__block" style="background-image: url(img/dist/icon-bg-01.svg);">
+                                <h3 class="poll__subheading">Почему без моего согласия была совершена оплата?</h3>
+                                <p class="poll__text">На сайте Вы оформили пробную подписку, которая продлевается автоматически на несколько дней или неделю с помощью рекуррентного платежа, с которым вы согласились при оплате.</p>
                             </div>
-                        </div>
-                        <div class="c-price poll__price">
-                            <span class="c-price__title">стоимость:</span>
-                            <div class="c-price__group">
-                                <span class="c-price__old-price">435₴</span>
-                                <span class="c-price__new-price">25₴</span>
+                            <div class="poll__block" style="background-image: url(img/dist/icon-bg-02.svg);">
+                                <h3 class="poll__subheading">Почему без моего согласия была совершена оплата?</h3>
+                                <p class="poll__text">
+                                    Мы используем рекуррентные платежи, также известные как рекарринговые платежи или «автоплатежи» — это возможность выполнять регулярные списания денег с банковской карты покупателя или электронного кошелька без повторного ввода реквизитов карты и без участия плательщика для инициации очередного платежа.
+                                    <br><br>
+                                    Рекарринговые платежи используют так же такие компании как Яндекс, Google, Amazon, IVI, Netflix и многие другие.
+                                </p>
                             </div>
                         </div>
                         <form action="#" class="poll-form">
-                            <input type="email" class="input input--center poll-form__input" placeholder="Ваш Email">
-                            <button class="poll-form__btn btn btn--green">Оплатить</button>
-                            <label for="poll-form" class="circle-checkbox poll-form__checkbox">
-                                <input type="checkbox" id="poll-form" class="circle-checkbox__input">
-                                <span class="circle-checkbox__icon"></span>
-                                <span class="circle-checkbox__label">Нажимая кнопку "Оплатить" Вы даете согласие на обработку персональных данных, а также подтверждаете ознакомление с публичной офертойи тарифами</span>
-                            </label>
+                            <h3 class="poll__subtitle poll-form__subtitle">Карта</h3>
+                            <div class="poll-form__inner">
+                                <div class="poll-form__group">
+                                    <span class="poll-form__help">Первые 6 цифр</span>
+                                    <input type="text" class="input poll-form__input" placeholder="123456">
+                                </div>
+                                <div class="poll-form__group">
+                                    <span class="poll-form__help">Последние 4 цифры</span>
+                                    <input type="text" class="input poll-form__input" placeholder="1234">
+                                </div>
+                            </div>
+                            <div class="poll-form__info">
+                                <div class="c-info">
+                                    <div class="c-info__icon" style="background-image: url(../img/dist/sprite.svg#icon-lock);"></div>
+                                    <span class="c-info__text">Все данные передаются по зашифрованному каналу с использованием протокола TLS. Использование данной страницы абсолютно безопасно.</span>
+                                </div>
+                                <div class="c-info">
+                                    <div class="c-info__icon" style="background-image: url(../img/dist/sprite.svg#icon-card);"></div>
+                                    <span class="c-info__text">Указывается только часть данных, это безопасно</span>
+                                </div>
+                            </div>
+                            <button class="poll-form__btn btn btn--green">Отписаться</button>
                         </form>
-                        <div class="c-payment poll__payment">
-                            <h3 class="c-payment__subtitle">Принимаем к оплате:</h3>
-                            <ul class="c-payment__list">
-                                <li class="c-payment__item">
-                                    <picture class="c-payment__img">
-                                        <img src="img/dist/visa.png" width="92px" height="30px" alt="Visa">
-                                    </picture>
-                                </li>
-                                <li class="c-payment__item">
-                                    <picture class="c-payment__img">
-                                        <img src="img/dist/mastercard.png" width="50px" height="30px" alt="Mastercard">
-                                    </picture>
-                                </li>
-                                <li class="c-payment__item">
-                                    <picture class="c-payment__img">
-                                        <img src="img/dist/apple-pay.png" width="73px" height="30px" alt="Apple Pay">
-                                    </picture>
-                                </li>
-                                <li class="c-payment__item">
-                                    <picture class="c-payment__img">
-                                        <img src="img/dist/google-pay.png" width="76px" height="30px" alt="Google Pay">
-                                    </picture>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
