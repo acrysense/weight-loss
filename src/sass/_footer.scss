@@ -25,7 +25,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        margin: 0 auto 10px;
+        margin: 0 auto;
         padding: 0;
         font-size: 18px;
         font-weight: normal;
@@ -36,21 +36,6 @@
         border: none;
         &:focus {
             outline: none;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translate(-50%, 100%);
-            display: block;
-            margin-top: 2px;
-            width: 30px;
-            height: 10px;
-            background-image: url(../img/dist/sprite.svg#icon-dropdown);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
         }
         &::after {
             content: '';
@@ -68,10 +53,6 @@
             background-position: center center;
         }
         &--close {
-            &::before {
-                transform: translate(-50%, 120%);
-                opacity: 0;
-            }
             &::after {
                 opacity: 1;
             }

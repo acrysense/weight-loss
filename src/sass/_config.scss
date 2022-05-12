@@ -150,6 +150,13 @@ svg {
         background: linear-gradient(116.15deg, #AFE11E 0%, #4DB856 100%);
         border-radius: 55px;
     }
+
+    @media screen and (max-width: 767px) {
+        &--green {
+            padding: 12px 6px;
+            font-size: 24px;
+        }
+    }
 }
 
 .back-btn {
@@ -331,7 +338,7 @@ svg {
     width: 100%;
     font-size: 18px;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
     color: $primary-color;
     background: $white-color;
     border: 1px solid #AFE11E;
@@ -344,9 +351,12 @@ svg {
     &:focus {
         outline: none;
     }
+    &--center {
+        text-align: center;
+    }
 
     @media screen and (max-width: 767px) {
-        padding: 14px 6px;
+        padding: 14px 25px;
         font-size: 12px;
         font-weight: 500;
     }
